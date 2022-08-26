@@ -1,7 +1,7 @@
 ---
 title: useRequest
 ---
-<demo-model url="/pages/hook/useRequest/index"></demo-model>
+<demo-model code="useRequest"></demo-model>
 
 ## 基本使用
 
@@ -162,10 +162,10 @@ function useRequest(apiFunc: Promise, options: Object) {
 ### 参数
 
 
-| 参数    |   说明   |      类型      | 默认值 | 可选值                  |
-| --------- | :--------: | :---------------: | :------: | ------------------------- |
-| apiFunc | 接口方法 | 必须返回Promise |   -   | -                       |
-| options |  配置项  |     Object     |   -   | [options说明](#options) |
+| 参数    |   说明   |      类型      | 默认值 | 是否必填 | 可选值                  |
+| --------- | :--------: | :---------------: | :------: |------| ------------------------- |
+| apiFunc | 接口方法 | 必须返回Promise |   -   | 是    | -                       |
+| options |  配置项  |     Object     |   -   | 否    | [options说明](#options) |
 
 ### 返回值
 
@@ -182,9 +182,9 @@ function useRequest(apiFunc: Promise, options: Object) {
 ### *options*
 
 
-|    参数    |         说明         |     类型     | 默认值 | 可选值 |
-| :----------: | :--------------------: | :------------: | :------: | :------: |
-|   manual   |     是否手动加载     |   Boolean   | false |   -   |
-| onSuccess |      加载成功时      | (result)=>{} |   -   |   -   |
-|  onError  |      加载失败时      | (result)=>{} |   -   |   -   |
-| onComplete | 无论成功失败都会执行 |    ()=>{}    |   -   |   -   |
+|    参数    |         说明         |     类型     | 默认值 | 是否必填 | 可选值 |
+| :----------: | :--------------------: | :------------: | :------: |------| :------: |
+|   manual   |     是否手动加载     |   Boolean   | false | 否    |   -   |
+| onSuccess |      加载成功时      | (result)=>{} |   -   | 否    |   -   |
+|  onError  |      加载失败时      | (result)=>{} |   -   | 否    |   -   |
+| onComplete | 无论成功失败都会执行 |    ()=>{}    |   -   | 否    |   -   |

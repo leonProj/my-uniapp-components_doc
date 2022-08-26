@@ -7,11 +7,14 @@
 </template>
 
 <script>
+const PAGES={
+  useRequest:'/pages/hook/useRequest/index',
+  TlaStateManager:'/pages/hookComponents/TlaStateManager/index'
+}
 export default {
   props: {
-    url: {
+    code: {
       type: String,
-      default: '/'
     }
   },
   data() {
@@ -21,16 +24,8 @@ export default {
   },
   computed: {
     href() {
-      return this.url.indexOf('http') == 0 ? this.url : `${this.baseUrl}${this.url}`;
+      return this.code.indexOf('http') == 0 ? this.url : `${this.baseUrl}${PAGES[this.code]}`;
     }
-  },
-  created() {
-    // this.$notify({
-    // 	title: '高薪招聘前端开发',
-    // 	message: '深圳宝安区高薪招聘前端开发岗位，加入我们，和uView UI核心研发团队一起工作和成长，快来看看吧！联系QQ：1416956117，查看岗位：http://zpurl.cn/Y3SzR',
-    // 	duration: 10000,
-    // 	offset: 100
-    // });
   }
 }
 </script>

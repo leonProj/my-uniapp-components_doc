@@ -10,8 +10,8 @@ module.exports = {
         logo: '/logo.png',
         nav: [
             {text: '指南', link:  '/pages/guide/start'},
-            {text: 'hook', link:  '/pages/hook/useRequest'},
-            // {text: '组件', link: '/pages/components/button'},
+            {text: 'hook', link:  '/pages/hook/'},
+            {text: 'hook组件', link: '/pages/hookComponents/'},
             {
                 text: '相关链接',
                 items: [
@@ -33,10 +33,10 @@ module.exports = {
                 'useRequest'
             ],
 
-            // '/pages/components/': [
-            //     'button',
-            //     'noSim'
-            // ],
+            '/pages/hookComponents/': [
+                '',
+                'TlaStateManager'
+            ],
         },
         /* reco配置  */
         modePicker: true,
@@ -47,6 +47,7 @@ module.exports = {
         /*自定义的配置*/
         simulatorUrl: {
             '/pages/hook/useRequest':true,
+            '/pages/hookComponents/TlaStateManager':true,
         }
     }
 }
