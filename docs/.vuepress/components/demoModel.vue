@@ -9,7 +9,8 @@
 <script>
 const PAGES={
   useRequest:'/pages/hook/useRequest/index',
-  TlaStateManager:'/pages/hookComponents/TlaStateManager/index'
+  TlaStateManager:'/pages/hookComponents/TlaStateManager/index',
+  standardList:'/pages/template/standardList/index',
 }
 export default {
   props: {

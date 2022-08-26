@@ -3,6 +3,10 @@ title: TlaStateManager
 ---
 <demo-model code="TlaStateManager"></demo-model>
 
+:::tip 提示
+依赖hook:<a :href="$withBase('/pages/hook/useRequest')">useRequest</a>
+:::
+
 ### 基本使用
 
 `watchedState`是数组可监听多个，retry 代表是否显示重试按钮。此时需要处理@retry事件
@@ -63,6 +67,11 @@ export default {
 </script>
 
 ```
+### 此页面演示源代码地址
+
+:::tip
+<code-address code='TlaStateManager'/>
+:::
 
 ### Api
 

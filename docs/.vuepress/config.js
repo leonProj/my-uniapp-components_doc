@@ -12,6 +12,7 @@ module.exports = {
             {text: '指南', link:  '/pages/guide/start'},
             {text: 'hook', link:  '/pages/hook/'},
             {text: 'hook组件', link: '/pages/hookComponents/'},
+            {text: '模板页面', link: '/pages/template/'},
             {
                 text: '相关链接',
                 items: [
@@ -37,6 +38,10 @@ module.exports = {
                 '',
                 'TlaStateManager'
             ],
+            '/pages/template/': [
+                '',
+                'standardList'
+            ],
         },
         /* reco配置  */
         modePicker: true,
@@ -48,6 +53,7 @@ module.exports = {
         simulatorUrl: {
             '/pages/hook/useRequest':true,
             '/pages/hookComponents/TlaStateManager':true,
+            '/pages/template/standardList':true,
         }
     }
 }

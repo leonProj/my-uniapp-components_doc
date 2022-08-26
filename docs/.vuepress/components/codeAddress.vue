@@ -20,10 +20,21 @@
 
 <script>
 const ADDRESS_DIC = {
+  // hook
   useRequest: {
     github: "https://github.com/leonProj/my-uniapp-components/blob/master/src/pages/hook/useRequest/index.vue",
     gitee: "https://gitee.com/leonProj/my-uniapp-components/blob/master/src/pages/hook/useRequest/index.vue"
-  }
+  },
+  // hookComponents
+  TlaStateManager:{
+    github:"https://github.com/leonProj/my-uniapp-components/blob/master/src/pages/hookComponents/TlaStateManager/index.vue",
+    gitee:"https://gitee.com/leonProj/my-uniapp-components/blob/master/src/pages/hookComponents/TlaStateManager/index.vue",
+  },
+  // template
+  standardList:{
+    github:"https://github.com/leonProj/my-uniapp-components/blob/master/src/pages/template/standardList/index.vue",
+    gitee:"https://gitee.com/leonProj/my-uniapp-components/blob/master/src/pages/template/standardList/index.vue",
+  },
 }
 export default {
   props: {
