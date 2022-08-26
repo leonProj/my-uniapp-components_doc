@@ -97,5 +97,10 @@ export default {
 ...
 </mescroll-body>
 ```
+### 此页面演示源代码地址
+
+:::tip
+<code-address code='standardList'/>
+:::
 ### Api
 [mescroll参数说明](http://www.mescroll.com/api.html#options)
