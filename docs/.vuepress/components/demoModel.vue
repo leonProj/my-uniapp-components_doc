@@ -16,7 +16,7 @@ export default {
   },
   data() {
     return {
-      baseUrl: 'https://v2.h5.uviewui.com'
+      baseUrl: 'https://leonproj.gitee.io/my-uniapp-components/#'
     }
   },
   computed: {

@@ -1,7 +1,7 @@
 module.exports = {
     base:'/my-uniapp-components_doc/',
-    title: 'uniapp文档模板，移动端组件文档模板',
-    description: '一个简单的带h5模拟器组件的空vuepress文档模板',
+    title: '通用逻辑hook，uniapp组件',
+    description: '一些通用逻辑和组件',
     theme: 'reco',
     themeConfig: {
         /* vuepress默认主题配置 */
@@ -10,7 +10,8 @@ module.exports = {
         logo: '/logo.png',
         nav: [
             {text: '指南', link:  '/pages/guide/start'},
-            {text: 'components', link: '/pages/components/button'},
+            {text: 'hook', link:  '/pages/hook/useRequest'},
+            // {text: '组件', link: '/pages/components/button'},
             {
                 text: '相关链接',
                 items: [
@@ -19,20 +20,23 @@ module.exports = {
                     {text: 'vuepress官方文档', link: 'https://v1.vuepress.vuejs.org/zh/'}
                 ]
             },
-            { text: 'github', link: 'https://github.com/leonProj/vuepress_h5simulator_reco_template', icon: 'reco-github' },
-            { text: 'gitee', link: 'https://gitee.com/leonProj/vuepress_h5simulator_reco_template', icon: 'reco-mayun' }
+            { text: 'github', link: 'https://github.com/leonProj/my-uniapp-components', icon: 'reco-github' },
+            { text: 'gitee', link: 'https://gitee.com/leonProj/my-uniapp-components', icon: 'reco-mayun' }
 
         ],
         sidebar: {
             '/pages/guide/': [
                 'start',
-                'simulator'
+            ],
+            '/pages/hook/': [
+                '',
+                'useRequest'
             ],
 
-            '/pages/components/': [
-                'button',
-                'noSim'
-            ],
+            // '/pages/components/': [
+            //     'button',
+            //     'noSim'
+            // ],
         },
         /* reco配置  */
         modePicker: true,
@@ -42,7 +46,7 @@ module.exports = {
         subSidebar: 'auto',//在所有页面中启用自动生成子侧边栏，原 sidebar 仍然兼容
         /*自定义的配置*/
         simulatorUrl: {
-            '/pages/components/button':true,
+            '/pages/hook/useRequest':true,
         }
     }
 }
