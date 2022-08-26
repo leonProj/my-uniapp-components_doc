@@ -1,16 +1,18 @@
 module.exports = {
-    base:'/my-uniapp-components_doc/',
+    base: '/my-uniapp-components_doc/',
     title: '通用逻辑hook，uniapp组件',
     description: '一些通用逻辑和组件',
     theme: 'reco',
+    plugins: [
+        ['vuepress-plugin-code-copy', true]
+    ],
     themeConfig: {
         /* vuepress默认主题配置 */
-        plugins: ['@vuepress/last-updated'],
         lastUpdated: '最后更新时间',
         logo: '/logo.png',
         nav: [
-            {text: '指南', link:  '/pages/guide/start'},
-            {text: 'hook', link:  '/pages/hook/'},
+            {text: '指南', link: '/pages/guide/start'},
+            {text: 'hook', link: '/pages/hook/'},
             {text: 'hook组件', link: '/pages/hookComponents/'},
             {text: '模板页面', link: '/pages/template/'},
             {
@@ -21,8 +23,8 @@ module.exports = {
                     {text: 'vuepress官方文档', link: 'https://v1.vuepress.vuejs.org/zh/'}
                 ]
             },
-            { text: 'github', link: 'https://github.com/leonProj/my-uniapp-components', icon: 'reco-github' },
-            { text: 'gitee', link: 'https://gitee.com/leonProj/my-uniapp-components', icon: 'reco-mayun' }
+            {text: 'github', link: 'https://github.com/leonProj/my-uniapp-components', icon: 'reco-github'},
+            {text: 'gitee', link: 'https://gitee.com/leonProj/my-uniapp-components', icon: 'reco-mayun'}
 
         ],
         sidebar: {
@@ -51,9 +53,9 @@ module.exports = {
         subSidebar: 'auto',//在所有页面中启用自动生成子侧边栏，原 sidebar 仍然兼容
         /*自定义的配置*/
         simulatorUrl: {
-            '/pages/hook/useRequest':true,
-            '/pages/hookComponents/TlaStateManager':true,
-            '/pages/template/standardList':true,
+            '/pages/hook/useRequest': true,
+            '/pages/hookComponents/TlaStateManager': true,
+            '/pages/template/standardList': true,
         }
     }
 }
